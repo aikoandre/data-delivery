@@ -12,6 +12,26 @@ st.markdown("""
     /* Center title */
     h1 { text-align: center; }
 
+    /* Center KPI metrics */
+    .kpi-card {
+        text-align: center;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--secondary-background-color);
+        border: 1px solid rgba(128, 128, 128, 0.2);
+    }
+    .kpi-label {
+        font-size: 1rem;
+        color: var(--text-color);
+        opacity: 0.7;
+        margin-bottom: 0.25rem;
+    }
+    .kpi-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--text-color);
+    }
+
     /* Stack columns on small screens */
     @media (max-width: 768px) {
         [data-testid="column"] {
@@ -29,7 +49,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🍕 Data Delivery - Executive Overview")
+st.title("🍕 Data Delivery")
 st.markdown("<p style='text-align: center;'>Interactive dashboard connected to the Data Warehouse (PostgreSQL) for order and revenue analysis.</p>", unsafe_allow_html=True)
 
 # 2. Conexão com o Banco de Dados (Cache para não reconectar toda hora)
@@ -94,9 +114,20 @@ try:
     # Linha de KPIs
     col1, col2 = st.columns(2)
     with col1:
-        st.metric("📦 Total Delivered Orders", f"{df_kpis['total_pedidos'][0]}")
+        st.markdown(f"""
+        <div class='kpi-card'>
+            <div class='kpi-label'>📦 Total Delivered Orders</div>
+            <div class='kpi-value'>{df_kpis['total_pedidos'][0]}</div>
+        </div>
+        """, unsafe_allow_html=True)
     with col2:
-        st.metric("💰 Total Revenue", f"R$ {df_kpis['faturamento_total'][0]:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.'))
+        revenue = f"R$ {df_kpis['faturamento_total'][0]:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.')
+        st.markdown(f"""
+        <div class='kpi-card'>
+            <div class='kpi-label'>💰 Total Revenue</div>
+            <div class='kpi-value'>{revenue}</div>
+        </div>
+        """, unsafe_allow_html=True)
 
     st.divider()
 
@@ -104,7 +135,7 @@ try:
     col_grafico1, col_grafico2 = st.columns(2)
 
     with col_grafico1:
-        st.subheader("Average Ticket by Cuisine")
+        st.markdown("<h3 style='text-align: center;'>Average Ticket by Cuisine</h3>", unsafe_allow_html=True)
         fig_ticket = px.bar(
             df_ticket, 
             x='tipo_culinaria', 
@@ -119,7 +150,7 @@ try:
         st.plotly_chart(fig_ticket, use_container_width=True)
 
     with col_grafico2:
-        st.subheader("Revenue by State")
+        st.markdown("<h3 style='text-align: center;'>Revenue by State</h3>", unsafe_allow_html=True)
         # Agrupando por estado para um gráfico de pizza
         df_estado_total = df_ranking.groupby('usuario_estado')['faturamento_total'].sum().reset_index()
         fig_estado = px.pie(
