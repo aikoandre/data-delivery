@@ -1,0 +1,302 @@
+[
+    {
+        "id_usuario": 1,
+        "nome": "Gabriel Souza",
+        "estado": "RS",
+        "data_cadastro": "2025-10-06 08:55:50"
+    },
+    {
+        "id_usuario": 2,
+        "nome": "Daniela Santos",
+        "estado": "RJ",
+        "data_cadastro": "2025-05-10 08:55:50"
+    },
+    {
+        "id_usuario": 3,
+        "nome": "Daniela Silva",
+        "estado": "BA",
+        "data_cadastro": "2025-06-24 08:55:50"
+    },
+    {
+        "id_usuario": 4,
+        "nome": "Helena Rodrigues",
+        "estado": "RS",
+        "data_cadastro": "2025-05-17 08:55:50"
+    },
+    {
+        "id_usuario": 5,
+        "nome": "Carlos Santos",
+        "estado": "MG",
+        "data_cadastro": "2025-12-30 08:55:50"
+    },
+    {
+        "id_usuario": 6,
+        "nome": "Juliana Silva",
+        "estado": "SP",
+        "data_cadastro": "2026-02-18 08:55:50"
+    },
+    {
+        "id_usuario": 7,
+        "nome": "Fernanda Santos",
+        "estado": "PR",
+        "data_cadastro": "2025-07-04 08:55:50"
+    },
+    {
+        "id_usuario": 8,
+        "nome": "Eduardo Rodrigues",
+        "estado": "RJ",
+        "data_cadastro": "2025-04-21 08:55:50"
+    },
+    {
+        "id_usuario": 9,
+        "nome": "Juliana Santos",
+        "estado": "MG",
+        "data_cadastro": "2025-04-15 08:55:50"
+    },
+    {
+        "id_usuario": 10,
+        "nome": "Daniela Rodrigues",
+        "estado": "SC",
+        "data_cadastro": "2026-02-15 08:55:50"
+    },
+    {
+        "id_usuario": 11,
+        "nome": "Ana Souza",
+        "estado": "SP",
+        "data_cadastro": "2025-12-07 08:55:50"
+    },
+    {
+        "id_usuario": 12,
+        "nome": "Carlos Santos",
+        "estado": "SP",
+        "data_cadastro": "2026-01-21 08:55:50"
+    },
+    {
+        "id_usuario": 13,
+        "nome": "Juliana Souza",
+        "estado": "RS",
+        "data_cadastro": "2025-12-23 08:55:50"
+    },
+    {
+        "id_usuario": 14,
+        "nome": "Gabriel Silva",
+        "estado": "BA",
+        "data_cadastro": "2025-11-21 08:55:50"
+    },
+    {
+        "id_usuario": 15,
+        "nome": "Juliana Silva",
+        "estado": "BA",
+        "data_cadastro": "2025-08-24 08:55:50"
+    },
+    {
+        "id_usuario": 16,
+        "nome": "Daniela Souza",
+        "estado": "SP",
+        "data_cadastro": "2025-04-06 08:55:50"
+    },
+    {
+        "id_usuario": 17,
+        "nome": "Juliana Silva",
+        "estado": "PR",
+        "data_cadastro": "2025-07-20 08:55:50"
+    },
+    {
+        "id_usuario": 18,
+        "nome": "Helena Silva",
+        "estado": "MG",
+        "data_cadastro": "2025-07-11 08:55:50"
+    },
+    {
+        "id_usuario": 19,
+        "nome": "Igor Silva",
+        "estado": "SC",
+        "data_cadastro": "2025-05-31 08:55:50"
+    },
+    {
+        "id_usuario": 20,
+        "nome": "Bruno Oliveira",
+        "estado": "BA",
+        "data_cadastro": "2025-09-14 08:55:50"
+    },
+    {
+        "id_usuario": 21,
+        "nome": "Eduardo Oliveira",
+        "estado": "SC",
+        "data_cadastro": "2025-09-06 08:55:50"
+    },
+    {
+        "id_usuario": 22,
+        "nome": "Ana Silva",
+        "estado": "SC",
+        "data_cadastro": "2025-07-26 08:55:50"
+    },
+    {
+        "id_usuario": 23,
+        "nome": "Gabriel Santos",
+        "estado": "MG",
+        "data_cadastro": "2025-06-13 08:55:50"
+    },
+    {
+        "id_usuario": 24,
+        "nome": "Gabriel Rodrigues",
+        "estado": "RJ",
+        "data_cadastro": "2025-09-27 08:55:50"
+    },
+    {
+        "id_usuario": 25,
+        "nome": "Ana Rodrigues",
+        "estado": "MG",
+        "data_cadastro": "2025-04-30 08:55:50"
+    },
+    {
+        "id_usuario": 26,
+        "nome": "Igor Souza",
+        "estado": "PR",
+        "data_cadastro": "2026-02-15 08:55:50"
+    },
+    {
+        "id_usuario": 27,
+        "nome": "Juliana Santos",
+        "estado": "SP",
+        "data_cadastro": "2025-08-10 08:55:50"
+    },
+    {
+        "id_usuario": 28,
+        "nome": "Gabriel Oliveira",
+        "estado": "RS",
+        "data_cadastro": "2025-05-27 08:55:50"
+    },
+    {
+        "id_usuario": 29,
+        "nome": "Bruno Souza",
+        "estado": "RJ",
+        "data_cadastro": "2025-10-24 08:55:50"
+    },
+    {
+        "id_usuario": 30,
+        "nome": "Gabriel Oliveira",
+        "estado": "BA",
+        "data_cadastro": "2025-07-29 08:55:50"
+    },
+    {
+        "id_usuario": 31,
+        "nome": "Gabriel Oliveira",
+        "estado": "BA",
+        "data_cadastro": "2025-05-21 08:55:50"
+    },
+    {
+        "id_usuario": 32,
+        "nome": "Fernanda Rodrigues",
+        "estado": "BA",
+        "data_cadastro": "2025-04-17 08:55:50"
+    },
+    {
+        "id_usuario": 33,
+        "nome": "Fernanda Santos",
+        "estado": "SC",
+        "data_cadastro": "2025-04-10 08:55:50"
+    },
+    {
+        "id_usuario": 34,
+        "nome": "Eduardo Santos",
+        "estado": "PR",
+        "data_cadastro": "2025-08-08 08:55:50"
+    },
+    {
+        "id_usuario": 35,
+        "nome": "Daniela Rodrigues",
+        "estado": "SC",
+        "data_cadastro": "2025-03-07 08:55:50"
+    },
+    {
+        "id_usuario": 36,
+        "nome": "Ana Santos",
+        "estado": "BA",
+        "data_cadastro": "2025-04-22 08:55:50"
+    },
+    {
+        "id_usuario": 37,
+        "nome": "Eduardo Oliveira",
+        "estado": "RJ",
+        "data_cadastro": "2025-05-18 08:55:50"
+    },
+    {
+        "id_usuario": 38,
+        "nome": "Eduardo Santos",
+        "estado": "SP",
+        "data_cadastro": "2025-03-15 08:55:50"
+    },
+    {
+        "id_usuario": 39,
+        "nome": "Eduardo Santos",
+        "estado": "BA",
+        "data_cadastro": "2026-01-11 08:55:50"
+    },
+    {
+        "id_usuario": 40,
+        "nome": "Carlos Oliveira",
+        "estado": "SP",
+        "data_cadastro": "2025-07-10 08:55:50"
+    },
+    {
+        "id_usuario": 41,
+        "nome": "Eduardo Oliveira",
+        "estado": "RS",
+        "data_cadastro": "2025-10-24 08:55:50"
+    },
+    {
+        "id_usuario": 42,
+        "nome": "Juliana Oliveira",
+        "estado": "MG",
+        "data_cadastro": "2025-06-25 08:55:50"
+    },
+    {
+        "id_usuario": 43,
+        "nome": "Bruno Souza",
+        "estado": "SC",
+        "data_cadastro": "2026-01-15 08:55:50"
+    },
+    {
+        "id_usuario": 44,
+        "nome": "Gabriel Santos",
+        "estado": "SC",
+        "data_cadastro": "2026-02-17 08:55:50"
+    },
+    {
+        "id_usuario": 45,
+        "nome": "Helena Oliveira",
+        "estado": "RS",
+        "data_cadastro": "2025-10-26 08:55:50"
+    },
+    {
+        "id_usuario": 46,
+        "nome": "Igor Souza",
+        "estado": "RJ",
+        "data_cadastro": "2025-10-27 08:55:50"
+    },
+    {
+        "id_usuario": 47,
+        "nome": "Bruno Rodrigues",
+        "estado": "SC",
+        "data_cadastro": "2025-10-12 08:55:50"
+    },
+    {
+        "id_usuario": 48,
+        "nome": "Igor Rodrigues",
+        "estado": "BA",
+        "data_cadastro": "2025-06-14 08:55:50"
+    },
+    {
+        "id_usuario": 49,
+        "nome": "Carlos Santos",
+        "estado": "MG",
+        "data_cadastro": "2025-04-11 08:55:50"
+    },
+    {
+        "id_usuario": 50,
+        "nome": "Juliana Santos",
+        "estado": "RS",
+        "data_cadastro": "2025-08-03 08:55:50"
+    }
+]
