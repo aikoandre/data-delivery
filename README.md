@@ -1,5 +1,19 @@
 # 🍕 Data Delivery Project: ETL & Dimensional Modeling
 
+## 📈 Interactive Dashboard (Streamlit)
+
+An executive dashboard built with Streamlit and Plotly connects directly to the Data Warehouse and displays KPIs, charts, and a ranking table in real time.
+
+**Features:**
+- Total delivered orders and total revenue KPIs
+- Average ticket per cuisine type (bar chart)
+- Revenue distribution by state (donut chart)
+- Revenue ranking table by restaurant and state
+
+![Executive Dashboard](img/dashboard.png)
+
+---
+
 ## 📖 Overview
 
 This project simulates the data environment of a food delivery application. The goal is to extract raw data (CSV and JSON files), clean and transform it using Python (Pandas), load it into a relational PostgreSQL database (via Docker), and build a Data Warehouse using the Star Schema methodology to answer complex business questions through Advanced SQL.
@@ -15,6 +29,7 @@ This project simulates the data environment of a food delivery application. The 
 | Infrastructure | Docker & Docker Compose |
 | Orchestration (Conceptual) | Apache Airflow (DAG developed) |
 | Analysis | SQL (CTEs, Window Functions, Aggregations) |
+| Dashboard | Streamlit & Plotly |
 | DB Tool | DBeaver |
 
 ---
@@ -67,6 +82,12 @@ python scripts/ingestao_dados.py
 python scripts/modelagem_dw.py
 ```
 
+**Step 4:** Launch the interactive dashboard
+```bash
+pip install streamlit plotly
+streamlit run scripts/dashboard.py
+```
+
 ---
 
 ## 📊 Analyses & Results (Business Intelligence)
@@ -97,7 +118,8 @@ Identifying users who purchased last month but did not return in the current mon
 
 ---
 
-## 🔜 Next Steps (Future Improvements)
+
+## �🔜 Next Steps (Future Improvements)
 
 - Implement **dbt** (Data Build Tool) to manage SQL transformations.
 - Migrate the local database to a Cloud Data Warehouse (e.g., Google BigQuery).
