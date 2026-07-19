@@ -1,7 +1,11 @@
 from sqlalchemy import create_engine, text
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 # Conectando no banco (Agora na porta 5433!)
-DATABASE_URI = 'postgresql+psycopg2://usuario_etl:senha_super_secreta@localhost:5433/data_delivery'
+DATABASE_URI = os.getenv('DB_URL', 'postgresql+psycopg2://usuario_etl:senha_super_secreta@localhost:5433/data_delivery')
 engine = create_engine(DATABASE_URI)
 
 # Vamos rodar várias queries SQL. Usamos text() no SQLAlchemy para isso.

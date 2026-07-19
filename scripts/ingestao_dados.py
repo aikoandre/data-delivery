@@ -3,9 +3,12 @@ import json
 from sqlalchemy import create_engine
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # 1. Configuração da Conexão com o Banco de Dados (PostgreSQL via Docker)
 # Formato: dialect+driver://username:password@host:port/database
-DATABASE_URI = 'postgresql+psycopg2://usuario_etl:senha_super_secreta@localhost:5433/data_delivery'
+DATABASE_URI = os.getenv('DB_URL', 'postgresql+psycopg2://usuario_etl:senha_super_secreta@localhost:5433/data_delivery')
 engine = create_engine(DATABASE_URI)
 
 print("Iniciando processo de ETL...")

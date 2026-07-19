@@ -27,7 +27,7 @@ This project simulates the data environment of a food delivery application. The 
 | Language | Python (Pandas, SQLAlchemy) |
 | Database | PostgreSQL 15 |
 | Infrastructure | Docker & Docker Compose |
-| Orchestration (Conceptual) | Apache Airflow (DAG developed) |
+| Orchestration (Conceptual) | Simple DAG |
 | Analysis | SQL (CTEs, Window Functions, Aggregations) |
 | Dashboard | Streamlit & Plotly |
 | DB Tool | DBeaver |

@@ -55,8 +55,13 @@ st.markdown("<p style='text-align: center;'>Interactive dashboard connected to t
 # 2. Conexão com o Banco de Dados (Cache para não reconectar toda hora)
 @st.cache_resource
 def get_engine():
-    # Conectando na porta 5433 conforme configurado no seu Docker!
-    return create_engine('postgresql+psycopg2://usuario_etl:senha_super_secreta@localhost:5433/data_delivery')
+    # Verifica se existe secret configurado no Streamlit Cloud
+    if "DB_URL" in st.secrets:
+        db_url = st.secrets["DB_URL"]
+    else:
+        # Fallback local (Docker)
+        db_url = 'postgresql+psycopg2://usuario_etl:senha_super_secreta@localhost:5433/data_delivery'
+    return create_engine(db_url)
 
 engine = get_engine()
 
