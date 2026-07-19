@@ -15,7 +15,7 @@ print("Iniciando processo de ETL...")
 
 # 2. EXTRAÇÃO (Extract) - Lendo os dados brutos
 print("Extraindo dados...")
-caminho_raw = '../data/raw/'
+caminho_raw = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'raw')
 
 df_restaurantes = pd.read_csv(os.path.join(caminho_raw, 'restaurantes.csv'))
 df_pedidos = pd.read_csv(os.path.join(caminho_raw, 'pedidos.csv'))
