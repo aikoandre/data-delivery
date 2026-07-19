@@ -55,12 +55,17 @@ st.markdown("<p style='text-align: center;'>Interactive dashboard connected to t
 # 2. Conexão com o Banco de Dados (Cache para não reconectar toda hora)
 @st.cache_resource
 def get_engine():
-    # Verifica se existe secret configurado no Streamlit Cloud
-    if "DB_URL" in st.secrets:
-        db_url = st.secrets["DB_URL"]
-    else:
-        # Fallback local (Docker)
+    # Verifica se existe secret configurado no Streamlit Cloud de forma segura
+    try:
+        if "DB_URL" in st.secrets:
+            db_url = st.secrets["DB_URL"]
+        else:
+            db_url = 'postgresql+psycopg2://usuario_etl:senha_super_secreta@localhost:5433/data_delivery'
+    except Exception as e:
+        # Fallback local ou erro de TOML
+        st.warning("⚠️ Streamlit Secrets warning (ignoring and using fallback): " + str(e))
         db_url = 'postgresql+psycopg2://usuario_etl:senha_super_secreta@localhost:5433/data_delivery'
+
     return create_engine(db_url)
 
 engine = get_engine()
